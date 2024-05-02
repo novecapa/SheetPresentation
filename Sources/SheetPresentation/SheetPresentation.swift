@@ -27,12 +27,12 @@ public struct SheetPresentation<SheetView: View>: UIViewControllerRepresentable 
     let model: SheetPresentationModel
     let controller = UIViewController()
 
-    func makeUIViewController(context: Context) -> UIViewController {
+    public func makeUIViewController(context: Context) -> UIViewController {
         controller.view.backgroundColor = .clear
         return controller
     }
 
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+    public func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
         if showSheet {
             if uiViewController.presentedViewController == nil {
                 let sheetViewController = CustomHostingController(rootView: sheetView, model: model)
