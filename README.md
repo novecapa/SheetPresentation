@@ -13,8 +13,8 @@ Add this repo to as a Swift Package dependency to your project
 To get started, import this library: import SheetPresentation
 
 ```swift
-import SwiftUI
 import SheetPresentation
+import SwiftUI
 
 struct ContentView: View {
     @State private var isSheetPresented = false
