@@ -1,6 +1,6 @@
 # SheetPresentation
 
-Descripción concisa del propósito y funcionalidades del paquete.
+Pqckage to show some View like UIKit presentation
 
 ## Instalation
 
@@ -20,7 +20,7 @@ struct ContentView: View {
     @State private var isSheetPresented = false
 
     var body: some View {
-        Button("Mostrar Sheet") {
+        Button("Show Sheet") {
             self.isSheetPresented.toggle()
         }
         .halfSheet(showSheet: $isSheetPresented,
