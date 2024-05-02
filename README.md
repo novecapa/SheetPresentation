@@ -1,6 +1,6 @@
 # SheetPresentation
 
-Pqckage to show some View like UIKit presentation
+Package to show some View like UIKit presentation
 
 ## Instalation
 
