@@ -8,6 +8,8 @@ Add this repo to as a Swift Package dependency to your project
 
 ``` https://github.com/novecapa/SheetPresentation ```
 
+Current version: v1.0.7
+
 ## Usage
 
 To get started, import this library: import SheetPresentation
