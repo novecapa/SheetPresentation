@@ -56,7 +56,7 @@ public class CustomHostingController<Content: View>: UIHostingController<Content
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         if let sheetPresentationController = self.sheetPresentationController {
             sheetPresentationController.detents = model.detents
             sheetPresentationController.prefersGrabberVisible = model.prefersGrabberVisible
@@ -68,7 +68,7 @@ public class CustomHostingController<Content: View>: UIHostingController<Content
         }
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
+    public override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         model.delegate.dismissSheetView()
     }
