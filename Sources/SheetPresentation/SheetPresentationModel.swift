@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct SheetPresentationModel {
+public struct SheetPresentationModel {
     let detents: [UISheetPresentationController.Detent]
     let prefersGrabberVisible: Bool
     let preferredCornerRadius: CGFloat

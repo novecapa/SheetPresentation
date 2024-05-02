@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol SheetPresentationProtocol {
+public protocol SheetPresentationProtocol {
     func dismissSheetView()
 }

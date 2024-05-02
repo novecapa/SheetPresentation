@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct SheetDetents: CustomPresentationDetent {
+public struct SheetDetents: CustomPresentationDetent {
     static func height(in context: Context) -> CGFloat? {
         return context.maxDetentValue * 0.6
     }

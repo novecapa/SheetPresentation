@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-extension View {
+public extension View {
     func halfSheet<SheetView: View>(showSheet: Binding<Bool>,
                                     model: SheetPresentationModel,
                                     @ViewBuilder sheeView: @escaping () -> SheetView) -> some View {
@@ -20,7 +20,7 @@ extension View {
     }
 }
 
-struct SheetPresentation<SheetView: View>: UIViewControllerRepresentable {
+public struct SheetPresentation<SheetView: View>: UIViewControllerRepresentable {
 
     var sheetView: SheetView
     @Binding var showSheet: Bool
@@ -44,7 +44,7 @@ struct SheetPresentation<SheetView: View>: UIViewControllerRepresentable {
     }
 }
 
-class CustomHostingController<Content: View>: UIHostingController<Content> {
+public class CustomHostingController<Content: View>: UIHostingController<Content> {
 
     let model: SheetPresentationModel
     init(rootView: Content, model: SheetPresentationModel) {
