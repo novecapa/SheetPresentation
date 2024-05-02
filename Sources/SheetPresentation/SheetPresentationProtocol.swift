@@ -8,5 +8,5 @@
 import Foundation
 
 public protocol SheetPresentationProtocol {
-    public func dismissSheetView()
+    func dismissSheetView()
 }
