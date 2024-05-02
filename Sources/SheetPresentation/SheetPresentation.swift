@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 public extension View {
-    func halfSheet<SheetView: View>(showSheet: Binding<Bool>,
+    public func halfSheet<SheetView: View>(showSheet: Binding<Bool>,
                                     model: SheetPresentationModel,
                                     @ViewBuilder sheeView: @escaping () -> SheetView) -> some View {
         return background {
