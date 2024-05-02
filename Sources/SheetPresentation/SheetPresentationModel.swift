@@ -9,8 +9,18 @@ import Foundation
 import SwiftUI
 
 public struct SheetPresentationModel {
-    public let detents: [UISheetPresentationController.Detent]
-    public let prefersGrabberVisible: Bool
-    public let preferredCornerRadius: CGFloat
-    public let delegate: SheetPresentationProtocol
+    let detents: [UISheetPresentationController.Detent]
+    let prefersGrabberVisible: Bool
+    let preferredCornerRadius: CGFloat
+    let delegate: SheetPresentationProtocol
+
+    public init(detents: [UISheetPresentationController.Detent],
+                prefersGrabberVisible: Bool,
+                preferredCornerRadius: CGFloat,
+                delegate: SheetPresentationProtocol) {
+        self.detents = detents
+        self.prefersGrabberVisible = prefersGrabberVisible
+        self.preferredCornerRadius = preferredCornerRadius
+        self.delegate = delegate
+    }
 }
